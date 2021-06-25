@@ -1,0 +1,35 @@
+.hotel {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.key {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0.1rem 0;
+}
+
+.value {
+  margin: 0.1rem 0;
+}
+
+.value:last-of-type {
+  margin-bottom: 0.6rem;
+}
+
+.hotel img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media (min-width: 40rem) {
+  .hotel {
+    width: 18rem;
+  }
+}

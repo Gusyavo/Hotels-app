@@ -1,0 +1,22 @@
+
+.button {
+  color: white;
+  background: #ff1b68;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1.5px solid #ff1b68;
+  text-transform: capitalize
+}
+
+.button:active {
+  color: #ff1b68;
+  background: white;
+}
+
+@media (min-width: 40rem) {
+  .button:hover {
+    color: #ff1b68;
+  background: white;
+  }
+}
