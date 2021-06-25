@@ -9,9 +9,10 @@ function Select({ indicator, hotels, setSortedKeys, sortedKeys }) {
 
   const changeOption = (e) => {
     const { value } = e.target;
+    console.log(parseInt(value));
     setSortedKeys(prevState => ({
       ...prevState,
-      [indicator]: value
+      [indicator]: /^\d+$/.test(value) ? parseInt(value) : value
     }))
   };
 

@@ -2,46 +2,46 @@
   {
     "name": "Ibis",
     "city": "Medellín",
-    "price": "100000"
+    "price": 100000
   },
   {
     "name": "Dan Carlton",
     "city": "Cali",
-    "price": "200000"
+    "price": 200000
   },
   {
     "name": "Hotel Campestre",
     "city": "Bogotá",
-    "price": "80000"
+    "price": 80000
   },
   {
     "name": "Gran Hotel",
     "city": "Bogotá",
-    "price": "100000"
+    "price": 100000
   },
   {
     "name": "Manila House",
     "city": "Cali",
-    "price": "200000"
+    "price": 200000
   },
   {
     "name": "Ibis",
     "city": "Bogotá",
-    "price": "200000"
+    "price": 200000
   },
   {
     "name": "Dan Carlton",
     "city": "Medellín",
-    "price": "100000"
+    "price": 100000
   },
   {
     "name": "Manila House",
     "city": "Medellín",
-    "price": "80000"
+    "price": 80000
   }  ,
   {
     "name": "Manila Castle",
     "city": "Bogotá",
-    "price": "90000"
+    "price": 90000
   }
 ]

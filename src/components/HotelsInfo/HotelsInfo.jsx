@@ -22,7 +22,7 @@ function HotesTable() {
     const filterHotels = () => {
       let filteredHotels = hotelsList;
       keys.forEach(key => {
-        if (!sortedKeys[key].includes('By ') && sortedKeys[key] !== '') {
+        if (!sortedKeys[key].toString().includes('By ') && sortedKeys[key] !== '') {
           filteredHotels = filteredHotels.filter(hotel => hotel[key] === sortedKeys[key]);
         }
       });
@@ -49,7 +49,7 @@ function HotesTable() {
             {keys.map((key, index) => (
               <Select
                 key={index}
-                hotels={sortedKeys[key].includes('By ') ? hotels : hotelsList}
+                hotels={sortedKeys[key].toString().includes('By ') ? hotels : hotelsList}
                 indicator={key}
                 setSortedKeys={setSortedKeys}
                 sortedKeys={sortedKeys}
@@ -59,9 +59,9 @@ function HotesTable() {
         </div>
       </div>
       <ul className={styles['hotels-list']}>
-        {hotels.map((hotel, index) => (
-          <Hotel hotel={hotel} keys={keys} key={index} index={index} />
-        ))}
+        {hotels.length > 0 && hotels.map((hotel, index) => <Hotel hotel={hotel} keys={keys} key={index} index={index} />)}
+        {hotels.length === 0 && <h2>There are no results</h2>}
+
       </ul>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HotelsList from './components/HotelsTable/HotelsInfo';
+import HotelsInfo from './components/HotelsInfo/HotelsInfo';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
         <h1>Hotels App</h1>
       </header>
       <main className='main'>
-        <HotelsList />
+        <HotelsInfo />
       </main>
       <footer className='footer'>
         <p>Hotels App</p>
